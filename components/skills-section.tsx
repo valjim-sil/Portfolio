@@ -6,12 +6,13 @@ import {
   FileCode2,
   Zap,
   Paintbrush,
-  FrameIcon,
   Layers,
   Network,
   Database,
   Server,
-  Globe,
+  Terminal,
+  LayoutTemplate,
+  Library
 } from "lucide-react"
 import { useI18n } from "@/lib/i18n"
 import { AnimatedSection, AnimatedItem } from "@/components/animated-section"
@@ -23,24 +24,25 @@ const skillGroups = [
       { name: "React.js", icon: Code2 },
       { name: "React Native", icon: Smartphone },
       { name: "TypeScript", icon: FileCode2 },
+
     ],
   },
   {
     labelKey: "skills.frontend",
     skills: [
-      { name: "Vite", icon: Zap },
+      { name: "Vite", icon: Zap }, 
       { name: "Tailwind CSS", icon: Paintbrush },
-      { name: "Framer Motion", icon: FrameIcon },
-      { name: "Shadcn/UI", icon: Layers },
-      { name: "Axios", icon: Network },
+      { name: "Axios", icon: Network }, 
+      { name: "Material UI", icon: LayoutTemplate }, 
     ],
   },
   {
     labelKey: "skills.backend",
     skills: [
-      { name: "Laravel", icon: Server },
-      { name: "MySQL", icon: Database },
-      { name: "REST APIs", icon: Globe },
+      { name: "Node.js", icon: Library },  
+      { name: "PHP", icon: Server }, 
+      { name: "MySQL", icon: Database },          
+      { name: "Python", icon: Terminal }, 
     ],
   },
 ]
@@ -52,8 +54,9 @@ export function SkillsSection() {
     <section id="skills" className="px-6 py-24 lg:py-32">
       <div className="mx-auto max-w-6xl">
         <AnimatedSection>
+          {/* Usamos las llaves correctas de tu i18n.tsx */}
           <p className="font-mono text-xs uppercase tracking-widest text-primary">
-            {t("skills.title")}
+            {t("nav.skills")} 
           </p>
           <h2 className="mt-3 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             {t("skills.title")}

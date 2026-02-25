@@ -1,16 +1,16 @@
-"use client"
+"use client";
 
-import { ArrowUpRight, Check } from "lucide-react"
-import { useI18n } from "@/lib/i18n"
-import { AnimatedSection, AnimatedItem } from "@/components/animated-section"
+import { Check } from "lucide-react";
+import { useI18n } from "@/lib/i18n";
+import { AnimatedSection, AnimatedItem } from "@/components/animated-section";
 
 interface CaseStudyProps {
-  titleKey: string
-  companyKey: string
-  descriptionKey: string
-  highlightKeys: string[]
-  tags: string[]
-  isMobile?: boolean
+  titleKey: string;
+  companyKey: string;
+  descriptionKey: string;
+  highlightKeys: string[];
+  tags: string[];
+  isMobile?: boolean;
 }
 
 function CaseStudyCard({
@@ -21,7 +21,7 @@ function CaseStudyCard({
   tags,
   isMobile,
 }: CaseStudyProps) {
-  const { t } = useI18n()
+  const { t } = useI18n();
 
   return (
     <div className="group relative overflow-hidden rounded-xl border border-border/50 bg-card transition-all hover:border-primary/30">
@@ -37,7 +37,6 @@ function CaseStudyCard({
             {isMobile ? "mobile-app" : "web-dashboard"}
           </span>
         </div>
-        <ArrowUpRight className="h-4 w-4 text-muted-foreground transition-colors group-hover:text-primary" />
       </div>
 
       {/* Mock screen */}
@@ -85,7 +84,9 @@ function CaseStudyCard({
         <p className="font-mono text-xs uppercase tracking-widest text-primary">
           {t(companyKey)}
         </p>
-        <h3 className="mt-2 text-xl font-semibold text-foreground">{t(titleKey)}</h3>
+        <h3 className="mt-2 text-xl font-semibold text-foreground">
+          {t(titleKey)}
+        </h3>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           {t(descriptionKey)}
         </p>
@@ -93,7 +94,10 @@ function CaseStudyCard({
         {/* Highlights */}
         <ul className="mt-5 flex flex-col gap-2">
           {highlightKeys.map((key) => (
-            <li key={key} className="flex items-center gap-2 text-sm text-muted-foreground">
+            <li
+              key={key}
+              className="flex items-center gap-2 text-sm text-muted-foreground"
+            >
               <Check className="h-3.5 w-3.5 shrink-0 text-primary" />
               {t(key)}
             </li>
@@ -113,11 +117,11 @@ function CaseStudyCard({
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export function WorkSection() {
-  const { t } = useI18n()
+  const { t } = useI18n();
 
   return (
     <section id="work" className="px-6 py-24 lg:py-32">
@@ -167,5 +171,5 @@ export function WorkSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -17,29 +17,6 @@ export function Footer() {
             {t("footer.built")}
           </p>
         </div>
-        <div className="flex items-center gap-4">
-          <a
-            href="#"
-            className="text-muted-foreground transition-colors hover:text-foreground"
-            aria-label="GitHub"
-          >
-            <Github className="h-4 w-4" />
-          </a>
-          <a
-            href="#"
-            className="text-muted-foreground transition-colors hover:text-foreground"
-            aria-label="LinkedIn"
-          >
-            <Linkedin className="h-4 w-4" />
-          </a>
-          <a
-            href="#"
-            className="text-muted-foreground transition-colors hover:text-foreground"
-            aria-label="Twitter"
-          >
-            <Twitter className="h-4 w-4" />
-          </a>
-        </div>
       </div>
     </footer>
   )

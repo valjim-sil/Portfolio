@@ -7,7 +7,7 @@ const _inter = Inter({ subsets: ['latin'] })
 const _jetbrainsMono = JetBrains_Mono({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Valeria Jimenez | React & React Native Specialist',
+  title: 'Valeria Jimenez |  Software ',
   description: 'Systems Engineer specializing in the React Ecosystem. Building high-performance web and mobile solutions with TypeScript, Vite, and modern React patterns.',
   generator: 'v0.app',
   icons: {

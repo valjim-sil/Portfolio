@@ -91,15 +91,15 @@ export function ProjectsSection() {
               titleKey="projects.crm.title"
               descriptionKey="projects.crm.description"
               tags={["React", "TypeScript", "Tailwind CSS", "Material UI"]}
-              githubUrl="#"
+              githubUrl="https://github.com/valjim-sil/REACT-acamedic-project"
             />
           </AnimatedItem>
           <AnimatedItem delay={0.15}>
             <ProjectCard
               titleKey="projects.ecommerce.title"
               descriptionKey="projects.ecommerce.description"
-              tags={["Vite", "React", "Shopping Cart", "Performance"]}
-              githubUrl="#"
+              tags={["Vite", "React"]}
+              githubUrl="https://github.com/valjim-sil/HTML-academic-project"
             />
           </AnimatedItem>
         </div>
